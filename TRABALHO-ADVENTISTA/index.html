@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MoodMusic | Trilha Sonora</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="brand-school">
+
+            <div class="school-logo">
+
+                <!--
+                    COLOQUE SUA LOGO AQUI
+
+                    Exemplo:
+
+                    <img src="logo.png">
+                -->
+
+                <img src="images/logo/logo-adventista.webp" alt="">
+
+            </div>
+
+
+            <div class="school-name">
+
+                <span>Adventista</span>
+                <span>Canoas</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="site-name">
+            MoodMusic
+        </div>
+
+
+        <div class="nav-actions">
+
+            <button
+                id="favorites-nav-button"
+                class="nav-icon-button"
+            >
+                ♥ <span class="nav-icon-label">Favoritas</span>
+            </button>
+
+            <button
+                id="history-nav-button"
+                class="nav-icon-button"
+            >
+                📊 <span class="nav-icon-label">Histórico</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         TELA 1
+    ====================================================== -->
+
+    <main
+        id="welcome-screen"
+        class="screen welcome-screen"
+    >
+
+
+        <!-- FUNDO DE ÁLBUNS -->
+
+        <div class="album-background">
+
+            <div
+                id="row1"
+                class="album-row row-1 row-left"
+            ></div>
+
+            <div
+                id="row2"
+                class="album-row row-2 row-right"
+            ></div>
+
+            <div
+                id="row3"
+                class="album-row row-3 row-left-slow"
+            ></div>
+
+            <div
+                id="row4"
+                class="album-row row-4 row-right-fast"
+            ></div>
+
+            <div
+                id="row5"
+                class="album-row row-5 row-left"
+            ></div>
+
+            <div
+                id="row6"
+                class="album-row row-6 row-right"
+            ></div>
+
+        </div>
+
+
+        <!-- CAMADA ESCURA -->
+
+        <div class="background-overlay"></div>
+
+        <div class="background-blur"></div>
+
+
+        <!-- TEXTO -->
+
+        <div class="welcome-content">
+
+            <h1>
+                Olá, tudo bem?
+            </h1>
+
+            <p>
+                Clique em qualquer lugar ou pressione qualquer tecla para continuar
+            </p>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         TELA 2
+    ====================================================== -->
+
+    <main
+        id="feeling-screen"
+        class="screen feeling-screen hidden"
+    >
+
+        <div class="feeling-layout">
+
+
+            <!-- PERGUNTA -->
+
+            <div class="question-area">
+
+                <span class="eyebrow">
+                    TRILHA SONORA
+                </span>
+
+
+                <h2>
+                    Como você está se sentindo agora?
+                </h2>
+
+
+                <p>
+                    Selecione até duas opções ao lado que melhor
+                    representam o que você está sentindo neste momento.
+                </p>
+
+
+                <button
+                    id="continue-button"
+                    class="continue-button"
+                >
+                    Encontrar minha trilha
+                </button>
+
+
+                <button
+                    id="surprise-button"
+                    class="surprise-button"
+                >
+                    🎲 Sentimento surpresa
+                </button>
+
+
+                <span
+                    id="selected-text"
+                    class="selected-text"
+                ></span>
+
+
+                <span class="selection-hint">
+                    Você pode escolher 1 ou 2 sentimentos ao mesmo tempo.
+                </span>
+
+            </div>
+
+
+
+            <!-- SENTIMENTOS -->
+
+            <div class="feelings-area">
+
+                <button class="feeling-option">
+                    Alegria
+                </button>
+
+                <button class="feeling-option">
+                    Tristeza
+                </button>
+
+                <button class="feeling-option">
+                    Raiva
+                </button>
+
+                <button class="feeling-option">
+                    Medo
+                </button>
+
+                <button class="feeling-option">
+                    Amor
+                </button>
+
+                <button class="feeling-option">
+                    Nojo
+                </button>
+
+                <button class="feeling-option">
+                    Empatia
+                </button>
+
+                <button class="feeling-option">
+                    Gratidão
+                </button>
+
+                <button class="feeling-option">
+                    Orgulho
+                </button>
+
+                <button class="feeling-option">
+                    Vergonha
+                </button>
+
+                <button class="feeling-option">
+                    Culpa
+                </button>
+
+                <button class="feeling-option">
+                    Esperança
+                </button>
+
+                <button class="feeling-option">
+                    Ansiedade
+                </button>
+
+                <button class="feeling-option">
+                    Frustração
+                </button>
+
+                <button class="feeling-option">
+                    Ciúme
+                </button>
+
+                <button class="feeling-option">
+                    Inveja
+                </button>
+
+                <button class="feeling-option">
+                    Saudade
+                </button>
+
+                <button class="feeling-option">
+                    Solidão
+                </button>
+
+                <button class="feeling-option">
+                    Compaixão
+                </button>
+
+                <button class="feeling-option">
+                    Alívio
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         TELA 3
+         RESULTADOS
+    ====================================================== -->
+
+    <main
+        id="results-screen"
+        class="screen results-screen hidden"
+    >
+
+        <div class="mood-glow"></div>
+
+        <div class="results-layout">
+
+            <div class="results-header">
+
+                <div class="results-title-area">
+
+                    <span class="eyebrow">
+                        SUA TRILHA SONORA
+                    </span>
+
+                    <h2 id="results-title">
+                        Músicas para você
+                    </h2>
+
+                </div>
+
+                <button
+                    id="back-button"
+                    class="back-button"
+                >
+                    ← Escolher outro sentimento
+                </button>
+
+            </div>
+
+
+            <!-- CONTEÚDO PREENCHIDO PELO JAVASCRIPT -->
+
+            <div id="results-content"></div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         TELA 4
+         FAVORITAS
+    ====================================================== -->
+
+    <main
+        id="favorites-screen"
+        class="screen results-screen hidden"
+    >
+
+        <div class="results-layout">
+
+            <div class="results-header">
+
+                <div class="results-title-area">
+
+                    <span class="eyebrow">
+                        MINHA COLEÇÃO
+                    </span>
+
+                    <h2>
+                        Músicas favoritas
+                    </h2>
+
+                </div>
+
+                <button
+                    id="favorites-back-button"
+                    class="back-button"
+                >
+                    ← Voltar
+                </button>
+
+            </div>
+
+
+            <!-- CONTEÚDO PREENCHIDO PELO JAVASCRIPT -->
+
+            <div id="favorites-content"></div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         TELA 5
+         HISTÓRICO
+    ====================================================== -->
+
+    <main
+        id="history-screen"
+        class="screen results-screen hidden"
+    >
+
+        <div class="results-layout">
+
+            <div class="results-header">
+
+                <div class="results-title-area">
+
+                    <span class="eyebrow">
+                        SEU DIÁRIO EMOCIONAL
+                    </span>
+
+                    <h2>
+                        Histórico de sentimentos
+                    </h2>
+
+                </div>
+
+                <button
+                    id="history-back-button"
+                    class="back-button"
+                >
+                    ← Voltar
+                </button>
+
+            </div>
+
+
+            <!-- CONTEÚDO PREENCHIDO PELO JAVASCRIPT -->
+
+            <div id="history-content"></div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         MINI PLAYER FIXO
+    ====================================================== -->
+
+    <div
+        id="mini-player"
+        class="mini-player"
+    >
+
+        <img
+            id="mini-player-cover"
+            class="mini-player-cover"
+            src=""
+            alt=""
+        >
+
+        <div class="mini-player-info">
+
+            <span
+                id="mini-player-name"
+                class="mini-player-name"
+            ></span>
+
+            <span
+                id="mini-player-artist"
+                class="mini-player-artist"
+            ></span>
+
+        </div>
+
+        <div class="mini-player-controls">
+
+            <button
+                id="mini-player-toggle"
+                class="play-button playing"
+            >
+                ⏸
+            </button>
+
+            <button
+                id="mini-player-close"
+                class="mini-player-close"
+            >
+                ✕
+            </button>
+
+        </div>
+
+        <audio id="global-audio"></audio>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+
+         A ordem importa: cada arquivo usa coisas
+         definidas no(s) arquivo(s) anterior(es).
+    ====================================================== -->
+
+    <script src="js/config.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/screens.js"></script>
+
+</body>
+
+</html>
